@@ -22,4 +22,5 @@ func SubscriptionHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	http.ServeFile(w, r, "handlers/templates/subscriptionform.html")
+
 }

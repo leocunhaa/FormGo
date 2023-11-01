@@ -9,7 +9,7 @@ import (
 func main() {
 	http.HandleFunc("/", handlers.SubscriptionHandler)
 
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	if err := http.ListenAndServe(":4040", nil); err != nil {
 		log.Fatal(err)
 	}
 }
